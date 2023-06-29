@@ -10,5 +10,7 @@ js
 !.vscode/launch.json
 !.vscode/extensions.json
 
+.idea/*
+
 # macos
 .DS_Store

@@ -1,9 +1,11 @@
 {
-  "name": "docxtemplater-link-module-free",
-  "version": "0.0.1",
+  "name": "@travelhubx/docxtemplater-link-module-free",
+  "version": "1.2.0",
   "description": "Open Source Link Module for docxtemplater 3.x",
   "main": "js/index.js",
+  "types": "types/docxtemplater-link-module-free/index.d.ts",
   "scripts": {
+    "build": "npm run compile && npm run browserify && npm run uglify",
     "test:coverage": "istanbul cover _mocha --  es6/test.js",
     "compile": "rimraf js && mkdirp js && babel es6 --out-dir js",
     "preversion": "npm test && npm run browserify && npm run uglify",
@@ -20,24 +22,23 @@
     "babel-preset-es2015": "6.3.13",
     "browserify": "14.0.0",
     "chai": "3.4.1",
+    "docxtemplater": "3.28.6",
     "eslint": "3.15.0",
     "istanbul": "0.4.5",
     "jszip": "2.6.1",
-    "docxtemplater": "3.28.6",
+    "less": "3.11.1",
     "mkdirp": "0.5.1",
     "mocha": "3.2.0",
     "rimraf": "2.5.4",
+    "typescript": "^5.0.4",
     "uglifyjs": "2.4.10"
   },
-  "author": "Eric De Sa",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "dts-cli": "^2.0.0"
+  },
   "bin": {
     "changelog-collector": "./build/linkmodule.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ericdesa/docxtemplater-link-module-free.git"
   },
   "keywords": [
     "npm",
@@ -47,9 +48,5 @@
     "reporter",
     "update",
     "dependencies"
-  ],
-  "bugs": {
-    "url": "https://github.com/ericdesa/docxtemplater-link-module-free/issues"
-  },
-  "homepage": "https://github.com/ericdesa/docxtemplater-link-module-free#readme"
+  ]
 }
