@@ -1,6 +1,6 @@
 {
   "name": "@travelhubx/docxtemplater-link-module-free",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Open Source Link Module for docxtemplater 3.x",
   "main": "js/index.js",
   "types": "types/docxtemplater-link-module-free/index.d.ts",
