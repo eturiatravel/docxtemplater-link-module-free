@@ -1,7 +1,5 @@
 ### Build ###
 node_modules
-build
-js
 
 # IDE - VSCode
 .vscode/*
